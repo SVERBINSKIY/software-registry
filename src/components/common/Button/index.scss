@@ -1,0 +1,48 @@
+@import "src/styles/variable";
+
+.button {
+  height: 56px;
+  padding: 0 15.5px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  font-weight: 500;
+  line-height: 19px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.small {
+  width: 120px;
+}
+
+.medium {
+  width: 270px;
+}
+
+.large {
+  width: 430px;
+}
+
+.contained {
+  border: none;
+  background-color: $primary_blue;
+
+  &:hover {
+    background-color: $hover_blue;
+  }
+}
+
+.outlined {
+  border: 1px solid $primary_blue;
+  color: $primary_blue;
+  text-decoration: underline;
+
+  &:hover {
+    border: 1px solid $primary_grey;
+    color: $primary_grey;
+  }
+}
