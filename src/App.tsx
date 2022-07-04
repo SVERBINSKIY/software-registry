@@ -1,11 +1,13 @@
-import React, { FC } from 'react';
+import React, {FC} from 'react';
+
+import {Header} from 'components';
 
 const App: FC = () => {
-    return (
-        <div>
-            Hello world!
-        </div>
-    );
+  return (
+    <div>
+      <Header/>
+    </div>
+  );
 };
 
 export default App;

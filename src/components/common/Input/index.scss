@@ -1,0 +1,34 @@
+@import "src/styles/variable";
+
+.input-small {
+  height: 48px;
+  width: 270px;
+  padding: 14.5px 39px;
+}
+
+
+.label {
+  line-height: 19px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: $primary_grey;
+
+  &__error {
+    color: $primary_red;
+  }
+}
+
+.control {
+  border-radius: 5px;
+  background-color: $primary_input;
+  border: none;
+
+  &__error {
+    outline: 1px solid $primary_red;
+    color: $primary_red;
+  }
+
+  &:focus {
+    outline: 1px solid $primary_blue;
+  }
+}
